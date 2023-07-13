@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <style>
+        #watch {
+            display: flex;
+            width: 100%;
+        }
+
+        #d1 {
+
+            background-color: azure;
+            margin-left: 200px;
+            border: 2px gray solid;
+            padding: 5px;
+        }
+
+        #d2 {
+            background-color: azure;
+            margin-left: 200px;
+            border: 2px gray solid;
+            padding: 5px;
+        }
+
+        #stopwatch {
+            margin-left: 300px;
+            margin-top: 50px;
+        }
+
+        #start {
+            margin-left: 220px;
+        }
+
+        button {
+            margin: 30px;
+            padding: 10px;
+            border-radius: 10px;
+            border-style: none;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="watch">
+        <div id="d1">Time <span id="time"></span></div>
+        <div id="d2">Date <span id="date"></span></div>
+
+    </div>
+    <div id="stopwatch">Stopwatch:<span id="stime"></span>
+    </div>
+    <div><button id="start" style="background-color: green;" onclick="stopwatch()">Start</button>
+        <button id="stop" style="background-color: red;" onclick='stop()'>Stop</button>
+        <button id="resume" style="background-color: yellow;color: black;" onclick="resume()">Resume</button>
+        <button id="reset" style="background-color: orange;" onclick="reset()">Reset</button></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

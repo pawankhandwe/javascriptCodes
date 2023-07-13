@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashbord</title>
+    <link rel="icon" href="/img/lms.ico" type="image/x-icon/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+      body{
+        background-color: rgb(247, 246, 246);
+      }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body><nav class="navbar bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand">Rapidops</a>
+        <div class="d-flex" role="search">
+          <div id="user" style="color: white;"></div>
+          <a class="btn btn-light me-3" href="addcourse.html" >Add course</a>
+          <a class="light" onclick="logout()">log out</a>
+        </div>
+      </div>
+      </nav>
+      <div style="display:flex;">
+        <div style="width: 75%;margin :3% 12.5% ">
+          <diV class="bg-primary" style="color:white; padding-left: 10px; display: flex;" >Desbord </div>
+          <div style="background-color: white; height: 150%; display: flex ; gap: 5px;" id="card">
+            
+          </div>
+          </div>
+        </div>
+
+      </div>
+</body>
+</html>

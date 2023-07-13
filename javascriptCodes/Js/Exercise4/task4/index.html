@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+       width: 200px;
+       height: 25px;
+       margin-left: 10px;
+        }
+        button{
+            height: 30px;
+            color: blue;
+            border: 1px blue solid;
+            padding: 0px 10px 0px 10px;
+            background-color: white;
+            
+        }
+        #out{
+           margin-top: 50px; 
+        }
+        #out button{
+            margin: 5px;
+            color: white;
+            border-radius: 10px;
+            border-style: none;
+
+        }
+        #out input{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div><input type="text" id="firstname" placeholder="First Name"/>
+     <input type="text" id="lastname" placeholder="Last Name">
+     <button id="add" type="button" onclick="add()">&oplus; Add</button></div>
+     <div id="out">
+        <div><input type="checkbox"  id="check" onclick="selectAll()"> &emsp;&emsp;Select All&emsp;&emsp;&emsp;&emsp;total&emsp;<span id="total"></span>&emsp;&emsp;&emsp; <button onclick="deleteAll()" style="background-color: red; color:black;">Delete All</button></div>
+
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
